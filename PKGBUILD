@@ -69,7 +69,7 @@ build() {
 
   export CFLAGS="-O2 -pipe -fno-plt -Wall -D_FORTIFY_SOURCE=2 -fexceptions --param=ssp-buffer-size=4"
   export CXXFLAGS="-O2 -pipe -fno-plt -Wall -D_FORTIFY_SOURCE=2 -fexceptions --param=ssp-buffer-size=4"
-  python ./x.py build
+  python ./x.py --stage 2 build
 }
 
 package() {
